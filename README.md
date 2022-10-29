@@ -7,6 +7,7 @@
 
 <h3>WebApplication</h3>
 <p>
-    So this is what the web application looks like.<br>
-    <img src="./img/webPage.png" alt="webPage" width="500">
+    So this is what the web application looks like.<br><br>
+    <img src="./img/webPage.png" alt="webPage" width="500"><br><br>
+    Let's try command injection from <a href="https://book.hacktricks.xyz/pentesting-web/command-injection">hacktricks</a>
 </p>
