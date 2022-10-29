@@ -23,4 +23,5 @@
     </ol>
     Nothing intresting in <code>find</code> and the rest gave <code>not found</code> error. <br>
     So i decided to look at the enviorment variables which i later realised was also in the hint and there was our flag.<br>
+    <img src="./img/flag.png" alt="flag" width="500">
 </p>
