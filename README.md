@@ -7,5 +7,5 @@
 <h3>WebApplication</h3>
 <p>
     So this is what the web application looks like.
+    <img src="./img/webPage.png" alt="webPage" width="500">
 </p>
-<img src="./img/webPage.png" alt="webPage" width="500">
