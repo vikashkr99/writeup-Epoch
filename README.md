@@ -5,8 +5,8 @@
     The room also suggests Command Injection so maybe that's the vulnerability in the WebApplication.
 </p>
 
+<h3>WebApplication</h3>
 <p>
-    <strong>WebApplication</strong><br>
     So this is what the web application looks like.<br>
     <img src="./img/webPage.png" alt="webPage" width="500">
 </p>
