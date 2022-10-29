@@ -8,4 +8,4 @@
 <p>
     So this is what the web application looks like.
 </p>
-<img src="./img/webPage.png" alt="webPage">
+<img src="./img/webPage.png" alt="webPage" width="500">
