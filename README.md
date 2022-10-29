@@ -26,3 +26,4 @@
     So i decided to look at the <code>enviorment variables</code> which i later realised was also in the hint and there was our flag.<br>
     <img src="./img/flag.png" alt="flag" width="500">
 </p>
+<h1>Solved 😁</h1>
