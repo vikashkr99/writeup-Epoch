@@ -21,7 +21,8 @@
         <li><code>sudo -l</code></li>
         <li><code>Nothing in crontab</code></li>
     </ol>
-    Nothing intresting in <code>find</code> and the rest gave <code>not found</code> error. <br>
-    So i decided to look at the <code>enviorment variables </code>which i later realised was also in the hint and there was our flag.<br>
+    Nothing intresting in <code>find</code> and the rest gave <cod
+    e>not found</code> error. <br>
+    So i decided to look at the <code>enviorment variables</code> which i later realised was also in the hint and there was our flag.<br>
     <img src="./img/flag.png" alt="flag" width="500">
 </p>
