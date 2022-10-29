@@ -14,8 +14,7 @@
     It works.<br>
     Let's get a reverse shell. <br>
     <img src="./img/shell.png" alt="shell" width="500"><br><br>
-
-    It looks like we are in a docker container but trying to get out of it isn't working. Apart from that, there are a few things i tried that didn't work which are :
+    It looks like we are in a docker container but trying to get out of it isn't working. Apart from that, there are a few things i tried that didn't work which are : <br>
     <ol>
         <li><code>find / -type f -perm -04000 2>/dev/null</code></li>
         <li><code>sudo -l</code></li>
