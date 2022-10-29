@@ -10,7 +10,8 @@
     So this is what the web application looks like.<br>
     <img src="./img/webPage.png" alt="webPage" width="500"><br>
     Let's try command injection from <a href="https://book.hacktricks.xyz/pentesting-web/command-injection">hacktricks</a><br>
-    <img src="./img/webPage2.png" alt="webPage2"><br>
+    <img src="./img/webPage2.png" alt="webPage2" width="500"><br>
     It works.<br>
-    Let's get a reverse shell.
+    Let's get a reverse shell. <br>
+    <img src="./img/shell.png" alt="shell" width="500">
 </p>
