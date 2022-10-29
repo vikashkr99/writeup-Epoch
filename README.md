@@ -4,8 +4,9 @@
     The room description suggests tha there is a vulnerable WebApplication, So let's start the machine and check out the WebApplication.<br>
     The room also suggests Command Injection so maybe that's the vulnerability in the WebApplication.
 </p>
-<h4>WebApplication</h4>
+
 <p>
+    <strong>WebApplication</strong><br>
     So this is what the web application looks like.<br>
     <img src="./img/webPage.png" alt="webPage" width="500">
 </p>
