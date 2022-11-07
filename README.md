@@ -10,14 +10,14 @@ In this writeup, i will include all the steps i took to solve the room.
         <strong>Step 1 :</strong>
         <ul>
             Check out the WebApplication.<br>
-            <img src="./img/webPage.png" alt="webPage" width="500"><br>
+            <img src="./img/webPage.png" alt="webPage"><br>
         </ul>
     </li><br>
     <li>
         <strong>Step 2 :</strong>
         <ul>
             Let's try Command Injection in the input field from <a href="https://book.hacktricks.xyz/pentesting-web/command-injection">hacktricks</a>.<br>
-            <img src="./img/webPage2.png" alt="webPage2" width="500"><br>
+            <img src="./img/webPage2.png" alt="webPage2"><br>
             It works.
         </ul>
     </li><br>
