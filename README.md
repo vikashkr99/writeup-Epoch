@@ -9,7 +9,7 @@ In this writeup, i will include all the steps i took to solve the room.
     <li>
         <strong>Step 1 :</strong>
         <ul>
-            Check out the WebApplication.
+            Check out the WebApplication.<br>
             <img src="./img/webPage.png" alt="webPage" width="500"><br>
         </ul>
     </li><br>
