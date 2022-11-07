@@ -83,7 +83,7 @@ In this writeup, i will include all the steps i took to solve the room.
                 <li>
                     Compile and execute the executable using <code>gcc</code>.
                 </li><br>
-                <img src="./img/root.png" alt="root" width="500">
+                <img src="./img/root.png" alt="root">
             </ol>
         </ul>
     </li><br>
