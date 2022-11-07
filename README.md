@@ -15,7 +15,7 @@
                 <ul>
                     Rustscan result :
                     <ul>
-                        <code>Open 10.10.215.48:22 - ssh</code>
+                        <code>Open 10.10.215.48:22 - ssh</code><br>
                         <code>Open 10.10.215.48:80 - http</code>
                     </ul>
                 </ul>
