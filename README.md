@@ -82,8 +82,8 @@ In this writeup, i will include all the steps i took to solve the room.
                 </li>
                 <li>
                     Compile and execute the executable using <code>gcc</code>.
-                </li>
-                <img src="./img/root.png" alt="root">
+                </li><br>
+                <img src="./img/root.png" alt="root" width="500">
             </ol>
         </ul>
     </li><br>
