@@ -31,7 +31,7 @@ In this writeup, i will include all the steps i took to solve the room.
     <li>
         <strong>Step 4 :</strong>
         <ul>
-            Try to find user.txt and flag.txt using <code>find</code> command.<br>
+            Try to find user.txt or flag.txt using <code>find</code> command.<br>
             <Strong>FAILED!</Strong><br>
             Maybe the only flag we get is the root flag.
         </ul>
