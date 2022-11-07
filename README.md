@@ -74,7 +74,7 @@ In this writeup, i will include all the steps i took to solve the room.
             This might be vulnerable to <code>DirtyPipe</code> exploit.<br><br>
             <ol type="1">
                 It's a 3 step process to execute this exploit.
-                <hr style="height: 1px;">
+                <hr style="height: 1px;padding: 0;">
                 <li>
                     Download <a href="https://www.exploit-db.com/exploits/50808">DirtyPipe</a> exploit code on your local machine.
                 </li>
