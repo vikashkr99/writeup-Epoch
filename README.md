@@ -5,7 +5,7 @@ In this writeup, i will include all the steps i took to solve the room.
     The room description suggests tha there is a vulnerable WebApplication and also asking us to check out another room related to <code>Command Injection</code>.
 </h3></blockquote>
 
-<ol>
+<ul>
     <li>
         <strong>Step 1 :</strong>
         <ul>
@@ -80,4 +80,4 @@ In this writeup, i will include all the steps i took to solve the room.
             </ol>
         </ul>
     </li><br>
-    
+</ul>
