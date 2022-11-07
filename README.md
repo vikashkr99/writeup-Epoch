@@ -58,9 +58,16 @@ In this writeup, i will include all the steps i took to solve the room.
             Found the flag.......<br>
             I might have left the room since i already have the flag but i want to see if i can get root.
         </ul>
-    </li>
+    </li><br>
     <li>
         <strong>Step 8 :</strong>
+        <ul>
+            <code>find / -type f -perm -04000 2>/dev/null</code><br>
+            Nothing intrest.
+        </ul>
+    </li><br>
+    <li>
+        <strong>Step 9 :</strong>
         <ul>
             <code>uname -a</code><br>
             Linux kernel version 5. <br>
