@@ -20,12 +20,14 @@
                     </ul>
                 </ul>
             </li>
-            <li><h3>SSH</h3>
+            <li>
+                <h3>SSH</h3>
                 <ul><code>
                     OpenSSH 8.2p1 Ubuntu 4ubuntu0.4
                 </code></ul>
             </li>
-            <li><h3>WebPage</h3>
+            <li>
+                <h3>WebPage</h3>
                 <ul>
                     <img src="./img/webPage.png" alt="webPage" width="500"><br>
                 </ul>
@@ -62,9 +64,9 @@
                             </ul>
                         </li>
                     </ul>
-                    <h2>
-                        You can find your flag using <code>env</code>.
-                    </h2>
+                    <h3>
+                        You can find your flag hidden in enviorment variables.
+                    </h3>
                 </ul>
             </li>
         </ul>
