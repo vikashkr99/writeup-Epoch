@@ -9,7 +9,6 @@
 <ol>
     <li>
         <h2>Reconnaissance</h2>
-        <hr>
         <ul>
             <li>
                 <h3>Port Scanning</h3>
@@ -37,7 +36,6 @@
     </li><br>
     <li>
         <h2>Foothold</h2>
-        <hr>
         <ul>
             <li>
                 <h3>SSH</h3>
@@ -75,7 +73,6 @@
     </li>
     <li>
         <h2>Root</h2>
-        <hr>
         <ul>
             <li>
                 <h3>Things i tried and didn't work :</h3>
@@ -122,5 +119,4 @@
             </li>
         </ul>
     </li><br>
-
 </ol>
