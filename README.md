@@ -64,7 +64,7 @@ In this writeup, i will include all the steps i took to solve the room.
         <ul>
             <code>uname -a</code><br>
             Linux kernel version 5. <br>
-            This might be vulnerable to <code>DirtyPipe</code> exploit.<br>
+            This might be vulnerable to <code>DirtyPipe</code> exploit.<br><br>
             <ol type="1">
                 It's a 3 step process to execute this exploit.
                 <li>
